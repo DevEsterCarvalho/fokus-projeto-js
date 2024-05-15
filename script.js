@@ -11,14 +11,17 @@ const titulo = document.querySelector('.app__title')
 
 focoBotao.addEventListener('click', () => {
     html.setAttribute('data-contexto', 'foco')
+    imagem.setAttribute('src', '/imagens/foco.png')
 })
 
 curtoBotao.addEventListener('click', () => {
     html.setAttribute('data-contexto', 'descanso-curto')
+    imagem.setAttribute('src', '/imagens/descanso-curto.png')
 })
 
 longoBotao.addEventListener('click', () => {
     html.setAttribute('data-contexto', 'descanso-longo')
+    imagem.setAttribute('src', '/imagens/descanso-longo.png')
 })
 
 temporizador.addEventListener('click', () => {
