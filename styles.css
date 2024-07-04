@@ -230,6 +230,8 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
 }
 
+/* fim - toggle */
+
 /* dropdown */
 .dropdown-container {
     position: relative;
@@ -273,14 +275,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* fim - dropdown */
 
-/* dropdown */
-.dropdown-container {
-    position: relative;
-}
-
 .hidden {
     display: none;
 }
+
 
 .app__section-task-container {
     display: flex;
@@ -485,6 +483,8 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.8;
     cursor: not-allowed;
 }
+
+/* Para Tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
     .app__section-banner-container {
         width: 48rem;
@@ -493,7 +493,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Para Celulares */
 @media (max-width: 767px) {
-    
     .app__section-banner-container {
         width: 32rem;
     }
@@ -504,5 +503,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .app__card-timer {
         font-size: 6rem;
+    }
+
+    .app__section-active-task {
+        gap: 2rem;
     }
 }
