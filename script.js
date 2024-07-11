@@ -17,7 +17,8 @@ const iniciarOuPausarBotao = document.querySelector('#start-pause span')
 const iniciarOuPausarImagem =  document.querySelector('.app__card-primary-butto-icon')
 const temporizador = document.querySelector('#timer')
 
-intervaloId = null
+let tempoEmSegundos = 30
+let intervaloId = null
 
 musica.loop = true
 
@@ -30,7 +31,7 @@ musicaFocoInput.addEventListener('change', () => {
 })
 
 focoBotao.addEventListener('click', () => {
-    tempoEmSegundos = 10
+    tempoEmSegundos = 1000
     alterarContexto('foco')
     focoBotao.classList.add('active')
 })
@@ -109,7 +110,7 @@ function zerar () {
 }
 
 function mostrarTempo () {
-    const tempo = new Date(tempoEmSegundos*1000)
+    const tempo = new Date(tempoEmSegundos * 1000)
     const tempoFormatado = tempo.toLocaleTimeString('pt-Br', {minute: '2-digit', second: '2-digit'})
     temporizador.innerHTML = `${tempoFormatado}`
 } 
